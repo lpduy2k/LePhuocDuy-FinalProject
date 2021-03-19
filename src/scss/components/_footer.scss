@@ -1,0 +1,290 @@
+.footer {
+  background-color: #101010;
+
+  h6 {
+    padding-top: 10px;
+    font-size: 18px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color1;
+    border: none;
+  }
+
+  li {
+    list-style: none;
+  }
+  dl,
+  ol,
+  ul {
+    margin: 20px -40px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    padding: 3px 0;
+    letter-spacing: 1.5px;
+    color: #fff;
+  }
+  a:hover {
+    color: #fbbd61;
+    text-decoration: none;
+  }
+  .icon1 img {
+    margin-top: 10px;
+  }
+  .icon1 p {
+    margin-top: 13px;
+    margin-right: 12px;
+    color: white;
+  }
+  /*====================================*/
+  .icon2,
+  .icon,
+  .icon3 {
+    margin-top: 50px;
+  }
+  .icon2 {
+    margin-left: 58px;
+  }
+  .icon2 ul {
+    margin-left: -40px;
+  }
+  .icon3 ul {
+    margin-left: -38px;
+  }
+  /*---------------------------------*/
+  .icon img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+  }
+  .icon ul li {
+    display: inline-block;
+  }
+  .icon ul {
+    margin-left: -40px;
+  }
+  .icon img:hover {
+    border: 1px solid #fbbd61;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: #fbbd61;
+  }
+}
+@media  screen and (max-width: 375px){
+  .footer{
+     .icon{
+       display: none;
+     }
+     .icon2{
+       display: none;
+     }
+     .icon1{
+       .icon1_info{
+         display: none;
+       }
+       img{
+        width: 330px !important;
+       }
+     }
+     .icon3_show{
+      display: none;
+       
+     }
+  }
+}
+
+.footer {
+  background-color: #222222;
+  .footer__content {
+      margin: 0 auto;
+      width: 70%;
+      .footer__rowFirst {
+          width: 100%;
+          margin: 0;
+          .footer__title {
+              color: #fff;
+          }
+          .footer__left {
+              .footer__text {
+                  font-weight: 500;
+                  color: #949494;
+                  line-height: 2.3;
+                  margin: 0;
+                  text-decoration: none;
+                  transition: all 0.2s;
+                  &:hover {
+                      color: #fff;
+                  }
+              }
+          }
+          .footer__middle {
+              .row {
+                  .col-12 {
+                      margin-bottom: 15px;
+                      a {
+                          img {
+                              width: 30px;
+                              height: 30px;
+                              border-radius: 50%;
+                              margin-right: 15px;
+                              &:hover {
+                                  opacity: 0.5;
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+          .footer__right {
+              .row {
+                  .footer__hideOnMobile {
+                      text-align: center;
+                      a {
+                          .iconApple{
+                              height: 30px;
+                              width: 25px;
+                              margin-right: 15px;
+                          }
+                          .iconAndroid{
+                              height: 30px;
+                              width: 25.86px;
+                          }
+                          .iconFace{
+                              height: 30px;
+                              width: 30px;
+                              margin-right: 15px;
+                          }
+                          .iconZalo{
+                              height: 30px;
+                              width: 30.95px;
+                          }
+                      }
+                  }
+              }
+          }
+      }
+      .footer__hr {
+          border-top: 1px solid #4a4a4a;
+      }
+      .footer__rowSecond {
+          width: 100%;
+          margin: 0;
+          .footer__img {
+              padding: 0;
+          }
+          .footer__img {
+              .footer__logo {
+                  img {
+                      width: 80px;
+                      height: auto;
+                      border-radius: 5px;
+                  }
+              }
+          }
+          .footer__hr__content {
+              font-size: 13px;
+              h6 {
+                  color: #fff;
+                  font-size: 13px;
+                  margin: 0;
+                  line-height: 1.8;
+              }
+              p {
+                  color: #949494;
+                  margin: 0;
+                  line-height: 1.8;
+                  .footer__email {
+                      color: #ff0000;
+                      text-decoration: none;
+                  }
+              }
+          }
+          .footer__img {
+              .footer__BoCo {
+                  text-align: right;
+                  img {
+                      width: 130px;
+                  }
+              }
+          }
+      }
+  }
+}
+
+.footer {
+  @media  screen and (max-width: 1200px) {
+      .footer__content {
+          width: 85%;
+          margin: 0 auto;
+      }
+  }
+  @media  screen and (max-width: 992px) {
+      .footer__content {
+          .footer__rowFirst{
+              .footer__title{
+                  display: none;
+              }
+              .row{
+                  .footer__remove{
+                      display: none;
+                  }
+                  .footer__onMobile{
+                      display: flex;
+                      .footer__text{
+                          margin-right: 10px;
+                      }
+                  }
+                  .footer__hideOnMobile{
+                      text-align: left!important;
+                  }
+              }
+              .footer__middle{
+                  display: none;
+              }
+          }
+          .footer__rowSecond{
+              text-align: center;
+          }
+          
+      }
+  }
+  @media  screen and (max-width: 767px) {
+      .footer__rowFirst{
+          .row{
+              .footer__onMobile{
+                  display: flex;
+                  .thoabao{
+                      margin: 0 auto; 
+                      display: flex;
+                  }
+               }
+               .footer__hideOnMobile{
+                  display: flex;
+                  .faza{
+                      margin: 0 auto; 
+                  }
+               }
+          }
+      }
+      .footer__rowSecond{
+          .footer__logo{
+              margin-bottom: 20px;
+          }
+          .footer__BoCo{
+              display: flex;
+              a{
+                  margin: 0 auto;
+              }
+          }
+      }
+  }
+}
+
+

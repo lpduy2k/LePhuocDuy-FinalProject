@@ -1,0 +1,155 @@
+.information__content{
+    margin: 80px auto 0 auto;
+    width: 70%;
+    .nav-tabs {
+        margin: 0 auto 50px auto;
+        border-bottom: none;
+        .nav-link {
+            border: none;
+            color: #000;
+            font-size: 20px;
+            font-weight: 500;
+            transition: all 0.5s;
+            &:hover {
+                font-size: 24px;
+            }
+        }
+        .nav-link.active {
+            color: #fa5238;
+            font-size: 24px;
+        }
+    }
+    .tab-content{
+        .tab-pane{
+            .infor{
+                display: grid;
+                grid-template-columns: repeat(6,1fr);
+                gap: 15px;
+                .infor__content{
+                    a{
+                        text-decoration: none;
+                        img{
+                            display: block;
+                            width: 100%;
+                            // height: 100%!important;
+                            border-radius: 5px;
+                        }
+                        h5{
+                            color: #000;
+                            &:hover{
+                                color: #fb4226;
+                            }
+                        }
+                    }
+                    .cmt{
+                        i{
+                            color: #869791;
+                        }
+                    }
+                }
+                .infor1{
+                    grid-column: 1/ span 3;
+                    img{
+                        height: 270px!important;
+                    }
+                }
+                .infor2{
+                    grid-column: 4/ span 3;
+                    img{
+                        height: 270px!important;
+                    }
+                }
+                .infor3{
+                    grid-column: 1/ span 2;
+                    img{
+                        height: 170px!important;
+                    }
+                }
+                .infor4{
+                    grid-column: 3/ span 2;
+                    img{
+                        height: 170px!important;
+                    }
+                }
+                .infor5{
+                    grid-column: 5/ span 2;
+                }
+            }
+            .inforMore{
+                text-align: center;
+                .xemThem{
+                    color: #949494;
+                    font-size: 13px;
+                    font-weight: 500;
+                    border: 1px solid #949494;
+                    border-radius: 5px;
+                    padding: 7px 20px;
+                    background-color: #fff;
+                    &:hover {
+                        color: #fff;
+                        background-color: #fb4226;
+                        border: 1px solid #fb4226;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                    &:focus .infor_xemThem{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.information__content{
+    @media  screen and (max-width: 767px) {
+        padding-top: 500px;
+        .nav-tabs {
+            .nav-link {
+                font-size: 17px;
+                &:hover {
+                    font-size: 20px;
+                }
+            }
+            .nav-link.active {
+                font-size: 20px;
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                .infor{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    .infor1{
+                        grid-column: 1/ span 1;
+                        img{
+                            height: 270px!important;
+                        }
+                    }
+                    .infor2{
+                        grid-column: 1/ span 1;
+                        img{
+                            height: 270px!important;
+                        }
+                    }
+                    .infor3{
+                        grid-column: 1/ span 1;
+                        img{
+                            height: 270px!important;
+                        }
+                    }
+                    .infor4{
+                        grid-column: 1/ span 1;
+                        img{
+                            height: 270px!important;
+                        }
+                    }
+                    .infor5{
+                        grid-column: 1/ span 1;
+                    }
+                }
+            }
+        }
+    }
+}
